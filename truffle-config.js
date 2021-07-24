@@ -58,7 +58,7 @@ module.exports = {
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
     // bscTestnet: {
-    // provider: () => new HDWalletProvider(mnemonic, `https://speedy-nodes-nyc.moralis.io/bd17337c93c629f19eb1efb0/bsc/testnet`),
+    // provider: () => new HDWalletProvider(mnemonic, `PROVIDER_URL`),
     // network_id: 97,       //Binance smart chain testnet id
     // gas: 5500000,        // Binance smart chain  has a lower block limit than mainnet
     // confirmations: 10,    // # of confs to wait between deployments. (default: 10)
@@ -66,7 +66,7 @@ module.exports = {
     // skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
     // },
     rinkibey: {
-    provider: () => new HDWalletProvider(mnemonic, `https://speedy-nodes-nyc.moralis.io/bd17337c93c629f19eb1efb0/eth/rinkeby/archive`),
+    provider: () => new HDWalletProvider(mnemonic, `PROVIDER_URL`),
     network_id: 4,       //Rinkibey testnet id
     gas: 5500000,        // Binance smart chain  has a lower block limit than mainnet
     confirmations: 3,    // # of confs to wait between deployments. (default: 10)
